@@ -1,4 +1,5 @@
-For using this project you need:
+---
+**Pipeline работы нейросетевого комплекса**
 
-1. select parameters in yaml file
-2. open terminal and write 'python3 magic.py'
+![Pipeline работы нейросетевого комплекса](example_pipeline_neural_networks/pipeline.png)
+---
