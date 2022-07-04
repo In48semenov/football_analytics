@@ -1,0 +1,27 @@
+main:
+  video_path: '../For_demonstration/Data/Champion_liga_2022/match_3.MOV' # 'CHE_RMA.MOV'
+  fs_directory: 'field_selection/datasets/tmp' # fs - directory for Field selection
+  txt_directory: 'results/detect_object/yolo_result/labels' # folder with txt file after detect object
+  clear_dir : False # flag for clearing images after yolo inference
+
+filed_selection:
+  image_folder: './field_selection/datasets/tmp'
+  save_folder: 'field_selection/results/'
+  show_network: False
+
+obj_detect:
+  weights: 'models_weights/yolov5l.pt'
+  source: '../field_selection/results/fake_C'
+  imgsize:
+    - 640
+    - 640
+  conf_threshold: 0.2
+  save_txt: True
+  save_crop: True
+  hide_labels: True
+  classes:
+    - 0  # person
+    - 32 # sports ball
+  project: '../results/detect_object'
+  exist: True
+
