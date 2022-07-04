@@ -245,9 +245,6 @@ class Analytics:
             counter += 1
             clear_output()
 
-            if counter == 1:
-                break
-
         df.to_csv(self.PATH_TO_PHYSICAL_STATE_PLAYERS, index=False)
 
     def __call__(self):

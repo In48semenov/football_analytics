@@ -1,5 +1,5 @@
 main:
-  video_path: '../For_demonstration/Data/Champion_liga_2022/match_3.MOV' # 'CHE_RMA.MOV'
+  video_path: '../For_demonstration/Data/Zenit_CSKA_2016/match_2.mp4' # 'CHE_RMA.MOV'
   fs_directory: 'field_selection/datasets/tmp' # fs - directory for Field selection
   txt_directory: 'results/detect_object/yolo_result/labels' # folder with txt file after detect object
   clear_dir : False # flag for clearing images after yolo inference
