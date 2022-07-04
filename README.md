@@ -16,7 +16,7 @@
 2. cd football_analytics
 3. активация виртуального окружения
 4. pip install requirements.txt
-5. cкачивание и добавление весов для моделеей
+5. cкачивание и добавление весов для моделей
     * Перейти по ссылке: [Google Drive](https://drive.google.com/drive/folders/1FSpRM3VPV-BglIMqAo4Zu5dlPXXcURs8?usp=sharing)
     * Скачать:
       - из папки field_selection скачать все файлы и поместить в field_selection/models_weights
@@ -25,4 +25,4 @@
 6. создание директории results/detect_object, results/frame, results/warmap, results/warmap_with_pos_camera
 7. по необходимости изменить параметры запуска в config-файле 'options.yaml'
 8. запуск в терминале:
-> python3 inference.py
+    > python3 inference.py
