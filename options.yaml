@@ -1,14 +1,17 @@
+# параметры для всего pipeline
 main:
   video_path: '../For_demonstration/Data/Zenit_CSKA_2016/match_2.mp4' # 'CHE_RMA.MOV'
   fs_directory: 'field_selection/datasets/tmp' # fs - directory for Field selection
   txt_directory: 'results/detect_object/yolo_result/labels' # folder with txt file after detect object
   clear_dir : False # flag for clearing images after yolo inference
 
+# параметры для выделения игровой поверхности
 filed_selection:
   image_folder: './field_selection/datasets/tmp'
   save_folder: 'field_selection/results/'
   show_network: False
 
+# параметры для детекции объектов
 obj_detect:
   weights: 'models_weights/yolov5l.pt'
   source: '../field_selection/results/fake_C'
