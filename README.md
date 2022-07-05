@@ -23,7 +23,7 @@
       - из папки field_selection скачать все файлы и поместить в field_selection/models_weights
       - из папки yolo скачать все файлы и поместить в yolo_inference/models_weights
       - из папки top_field перейти во внутренние папки, скачать из них все файлы и поместить в top_field/out/pretrained_init_guess и top_field/out/pretrained_loss_surface соответсвенно
-6. создание директории results/detect_object, results/frame, results/warmap, results/warmap_with_pos_camera
+6. создание директорий в корневной папке results/detect_object, results/frame, results/warmap, results/warmap_with_pos_camera
 7. по необходимости изменить параметры запуска в config-файле 'options.yaml'
 8. запуск в терминале:
     > python3 inference.py
