@@ -25,7 +25,7 @@ class TwoPix2PixModel:
         self.detec_netG = networks.define_G(opt.input_nc, opt.output_nc, opt.ngf,
                                             opt.which_model_netG, opt.norm, not opt.no_dropout, opt.init_type,
                                             self.gpu_ids)
-        # print('self.seg_netG',self.seg_netG)
+
         self.load_network(self.seg_netG, 'G', opt.which_epoch, 'seg')
         self.load_network(self.detec_netG, 'G', opt.which_epoch, 'detec')
 
